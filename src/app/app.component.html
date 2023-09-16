@@ -1,7 +1,11 @@
 
+<button (click)="increase()">increament</button>
+<button (click)="decrease()">decreament</button>
+{{counter}}
+<a style="padding: 10px;" routerLink="./ff" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{'exact':true}">//login</a>
 
-<a routerLink="/auth/ss/login">login</a>
-<a routerLink="/auth/ss/register">register</a>
+<a style="padding: 10px;" [routerLink]='["login"]' [routerLinkActive]="'active'" [routerLinkActiveOptions]="{'exact':true}">login</a>
+<a routerLink="/auth/ss/register" style="padding: 10px;" routerLinkActive="active">register</a>
 
 <router-outlet></router-outlet>
 
