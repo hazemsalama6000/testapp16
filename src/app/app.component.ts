@@ -23,7 +23,6 @@ export class AppComponent implements OnInit {
   data = ['sdf', 'sdf', 'sdf', 'sdfsdf'];
 
   constructor(private _store: Store<IStoreInterface>) {
-
   }
 
   ngOnInit(): void {

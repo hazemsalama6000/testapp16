@@ -7,9 +7,10 @@ import { AppRoutingModule } from './app/app-routing.module';
 import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
 import { counterReducer } from './app/store/count.reducer';
 import { reducers } from './app/store/store';
+import { HttpClientModule } from '@angular/common/http'; // Import HttpClientModule
 
 
 bootstrapApplication(AppComponent, {
-    providers: [importProvidersFrom(BrowserModule, AppRoutingModule, StoreModule.forRoot(reducers))]
+    providers: [importProvidersFrom(BrowserModule, AppRoutingModule,HttpClientModule, StoreModule.forRoot(reducers))]
 })
   .catch(err => console.error(err));
